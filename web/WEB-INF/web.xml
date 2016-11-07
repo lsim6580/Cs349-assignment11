@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>ShowQuestions</servlet-name>
+        <servlet-class>main.java.src.ShowQuestions</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetQuestionsAPI</servlet-name>
+        <servlet-class>main.java.src.GetQuestionsAPI</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ShowAnswers</servlet-name>
+        <servlet-class>main.java.src.ShowAnswers</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowQuestions</servlet-name>
+        <url-pattern>/ShowQuestions</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetQuestionsAPI</servlet-name>
+        <url-pattern>/GetQuestionsAPI</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowAnswers</servlet-name>
+        <url-pattern>/ShowAnswers</url-pattern>
+    </servlet-mapping>
+
+</web-app>
